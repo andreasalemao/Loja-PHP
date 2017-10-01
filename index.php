@@ -29,7 +29,7 @@ require_once('./dados/get.php');
             <!-- Menu do site -->
             <ul class="nav nav-pills">
                 <li role="presentation"><a href="<?php setHome(); ?>">Home</a></li>
-                <li role="presentation"><a href="<?php setHome(); ?>/admin">Painel</a></li>
+                <li role="presentation"><a href="<?php setHome(); ?>/pagina/produto">Painel</a></li>
                 <li role="presentation"><a href="<?php setPainel(); ?>">Painel</a></li>
                 <li role="presentation"><a href="<?php setPainel(); ?>/login">Vazio</a></li> 
             </ul>
