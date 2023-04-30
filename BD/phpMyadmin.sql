@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `cliId` int(11) NOT NULL,
+  `idCli` int(11) NOT NULL,
   `cliCpf` int(11) DEFAULT NULL,
   `cliNome` varchar(100) DEFAULT NULL,
   `cliSobrenome` varchar(100) DEFAULT NULL,
@@ -45,8 +45,8 @@ CREATE TABLE `cliente` (
 -- Extraindo dados da tabela `cliente`
 --
 
-INSERT INTO `cliente` (`cliId`, `cliCpf`, `cliNome`, `cliSobrenome`, `cliEndereco`, `cliCidade`, `cliEstado`, `cliEmail`, `cliFone`, `cliFone2`, `newsletter`, `coment`) VALUES
-(1, 422759112, 'andreas', 'siebert', '110 norte', 'Palmas', 'to', 'andreassiebert3@gmail', 92067262, 84273564, NULL, 'Comentario');
+INSERT INTO `cliente` (`idCli`, `cliCpf`, `cliNome`, `cliSobrenome`, `cliEndereco`, `cliCidade`, `cliEstado`, `cliEmail`, `cliFone`, `cliFone2`, `newsletter`, `coment`) VALUES
+(1, 11111111111, 'João', 'Ninguem', 'Rua qualquer', 'Cidade dos anjos', 'to', 'email@email.com', NULL, NULL, NULL, 'Comentário');
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,7 @@ INSERT INTO `produto` (`idProd`, `nomeProd`, `descProd`, `codFabricante`, `marca
 -- Indexes for table `cliente`
 --
 ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`cliId`);
+  ADD PRIMARY KEY (`idCli`);
 
 --
 -- Indexes for table `produto`
@@ -103,7 +103,7 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `cliId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idCli` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `produto`
 --
